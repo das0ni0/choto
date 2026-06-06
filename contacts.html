@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенческий Портал — Контакты</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-block">
+                <img src="ttsiigh.jpg" alt="Логотип" class="logo-icon">
+                <h1 class="logo">Студенческий портал</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="schedule.html" class="nav-link">Расписание</a>
+                <a href="news.html" class="nav-link">Новости</a>
+                <a href="contacts.html" class="nav-link active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <h2 class="page-title">Свяжитесь с нами</h2>
+
+        <div class="contacts-layout">
+            <!-- Форма -->
+            <div class="contact-form-card">
+                <h3>Написать сообщение</h3>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="student@university.ru">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ваш вопрос или предложение..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+
+            <!-- Информация -->
+            <div class="contact-info-card">
+                <h3>Наши контакты</h3>
+                <div class="info-list">
+                    <p><strong>Адрес:</strong> 625013, Российская Федерация, Тюменская область, г. Тюмень, ул. Энергетиков, д.45</p>
+                    <p><strong>Телефон:</strong> 8 (3452) 68−52−80</p>
+                    <p><strong>Email:</strong> tci72@obl72.ru</p>
+                    <p><strong>Часы работы:</strong> Пн-Пт: 09:00 - 18:00</p>
+                    <p><strong>Часы работы:</strong> Сб: 08:00 - 13:00</p>
+                    <p><strong>Часы работы:</strong> Вс: выходной</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Студенческий Портал. Групповой проект.</p>
+    </footer>
+
+</body>
+</html>

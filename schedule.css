@@ -1,0 +1,209 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f7;
+    min-height: 100vh;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: #2d3e50;
+    padding: 18px 40px;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover { opacity: 0.85; }
+.nav-link.active { border-bottom: 2px solid #ffffff; }
+
+.page-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px 40px;
+    flex: 1;
+}
+
+.page-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* ===== ACTIONS BAR (скачивание) ===== */
+.actions-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.download-link {
+    display: inline-block;
+    background: #2c3e50;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(58, 123, 213, 0.25);
+}
+
+.download-link:hover {
+    background: #2c3e50;
+}
+
+/* ===== FILTER BAR ===== */
+.filter-bar {
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.filter-label {
+    font-size: 0.95rem;
+    color: #5a6a7a;
+    margin-right: 4px;
+    font-weight: 500;
+}
+
+.filter-bar input[type="radio"] {
+    display: none;
+}
+
+.filter-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #e0e4ea;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #2c3e50;
+}
+
+.filter-btn:hover {
+    background: #eef3fa;
+}
+
+.filter-bar input[type="radio"]:checked + .filter-btn {
+    background: #2c3e50;
+    color: #ffffff;
+    border-color: #2c3e50;
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table thead {
+    background: #2c3e50;
+}
+
+.schedule-table th {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.schedule-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0e4ea;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.schedule-table td.day-cell {
+    background: #2c3e50;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:hover td:not(.day-cell) {
+    background: #f8f9fc;
+}
+
+.schedule-table .subject {
+    font-weight: 600;
+}
+
+.schedule-table sup {
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background-color: #2d3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}

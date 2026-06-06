@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5fa;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+    background-color: #2c3e50;
+    padding: 20px 40px;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Стили для логотипа и картинки рядом с ним */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между картинкой и текстом */
+}
+
+.logo-img {
+    height: 50px; /* Высота картинки-логотипа (можете изменить под себя) */
+    width: auto;
+    object-fit: contain;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+/* Секция "О техникуме" (текст + фото) */
+.about-section {
+    display: flex;
+    gap: 40px; /* Расстояние между текстом и картинкой */
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    flex: 1; /* Текст занимает всё свободное место */
+}
+
+.about-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.about-text p {
+    color: #5a6a7a;
+    font-size: 0.95rem;
+    line-height: 2; /* Ваш запрошенный межстрочный интервал */
+    margin-bottom: 15px;
+}
+
+.news-title {
+    margin-top: 25px; /* Отступ перед заголовком "Новости дня" */
+}
+
+/* Карточка для картинки "О техникуме" на белом фоне */
+.about-image-card {
+    flex: 1;
+    background-color: #ffffff; /* Белый фон */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    object-fit: cover;
+}
+
+/* ===== PHOTO GALLERY ===== */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.photo-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+/* ===== FOOTER (ДОБАВЛЕНО) ===== */
+.site-footer {
+    background-color: #2c3e50; /* Темный цвет, как в шапке */
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-copy {
+    color: #ffffff;
+    font-size: 0.95rem;
+    text-align: center;
+}
